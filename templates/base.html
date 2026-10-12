@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>main</title>
+</head>
+<body>
+    <form action='' method="POST">
+        <input type="text" id="url" name="input_url" placeholder="Enter url here" required>
+        <button type="submit">Submit</button>   
+     <form/>
+     
+    {% if image_data %}
+        <h2>Image Preview:</h2>
+        <!-- The browser renders the base64 string directly -->
+        <img src="{{ image_data }}" alt="Uploaded Preview" style="max-width: 500px;">
+    {% endif %}
+
+</body>
+</html>
