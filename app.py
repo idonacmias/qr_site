@@ -12,7 +12,7 @@ app = Flask(__name__,
 
 @app.route('/', methods=["GET", "POST"])
 def main():
-    img = None
+    image_data = None
     if request.method == 'POST':
         in_memory_file = io.BytesIO()
        
